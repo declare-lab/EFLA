@@ -23,3 +23,17 @@ We release the code to run on sMNIST
 ## Acknowledgement
 - We sincerely thank [flash-linear-attention](https://github.com/fla-org/flash-linear-attention) for the high quality training framework.
 - We also extend our heartfelt thanks to [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) for their evaluation framework.
+
+## Citation
+
+```bibtex
+@misc{lei2026errorfreelinearattentionfree,
+      title={Error-Free Linear Attention is a Free Lunch: Exact Solution from Continuous-Time Dynamics}, 
+      author={Jingdi Lei and Di Zhang and Soujanya Poria},
+      year={2026},
+      eprint={2512.12602},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2512.12602}, 
+}
+```
