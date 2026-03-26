@@ -17,7 +17,6 @@ import random
 BATCH_SIZE = 128
 DIM = 64          
 LR = 1e-3
-LR_EFLA = 3e-3
 STEPS_TO_LOG = 900 
 SEQ_LEN = 784
 
@@ -186,10 +185,8 @@ def train_phase(model, loader, phase_name, device, log_queue):
     log_queue.put(f"[GPU {device[-1]}] {phase_name} Training Started...")
     
     model.train()
-    if phase_name.lower() == 'efla':
-        optimizer = torch.optim.AdamW(model.parameters(), lr=LR_EFLA)
-    else:
-        optimizer = torch.optim.AdamW(model.parameters(), lr=LR)
+    
+    optimizer = torch.optim.AdamW(model.parameters(), lr=LR)
     loss_curve = []
 
     
